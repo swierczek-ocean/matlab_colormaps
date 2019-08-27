@@ -52,4 +52,7 @@ Color(:,48) = [0.093;0.111;0.261];  % bottom of balance
 Color(:,49) = [0.163;0.095;0.4223]; % bottom of haline
 Color(:,50) = [0.015;0.138;0.201];  % bottom of thermal
 Color = Color';
+% Color = sortrows(Color,3);
+% Color = sortrows(Color,2);
+% Color = sortrows(Color,1);
 % .........................................................................
