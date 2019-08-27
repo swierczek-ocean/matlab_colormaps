@@ -51,4 +51,5 @@ Color(:,47) = [0.8;1;0];            % flourescant yellow
 Color(:,48) = [0.093;0.111;0.261];  % bottom of balance
 Color(:,49) = [0.163;0.095;0.4223]; % bottom of haline
 Color(:,50) = [0.015;0.138;0.201];  % bottom of thermal
+Color = Color';
 % .........................................................................

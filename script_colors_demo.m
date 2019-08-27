@@ -14,13 +14,13 @@ coords = [0 10 0 51];
 
 figure()
 set(gcf, 'Position', [1, 1, 1600, 900])
-plot(X1,ones(91,1),'LineWidth',lw,'Color',Color(:,1))
+plot(X1,ones(91,1),'LineWidth',lw,'Color',Color(1,:))
 hold on
 for ii=2:50
     if mod(ii,2)==0
-        plot(X2,ii*ones(96,1),'LineWidth',lw,'Color',Color(:,ii))
+        plot(X2,ii*ones(96,1),'LineWidth',lw,'Color',Color(ii,:))
     else
-        plot(X1,ii*ones(91,1),'LineWidth',lw,'Color',Color(:,ii))
+        plot(X1,ii*ones(91,1),'LineWidth',lw,'Color',Color(ii,:))
     end
 end
 for ii=1:50
@@ -31,7 +31,7 @@ for ii=1:50
     end    
 end
 axis(coords)
-ax.AmbientLightColor = Color(:,36)';
+ax.AmbientLightColor = Color(36,:)';
 set(gca,'xtick',[])
 set(gca,'ytick',[])
 acc_plots
