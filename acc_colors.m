@@ -1,6 +1,6 @@
 %% Nice Colors for plots
 % % .........................................................................
-Color  = zeros(3,46);
+Color  = zeros(3,90);
 Color(:,1) = [85;170;170]/255;      % Light Blue-Grey
 Color(:,2) = [60;60;230]/255;       % Blue
 Color(:,3) = [170;0;170]/255;       % Bright Purple
@@ -51,8 +51,56 @@ Color(:,47) = [0.8;1;0];            % flourescant yellow
 Color(:,48) = [0.093;0.111;0.261];  % bottom of balance
 Color(:,49) = [0.163;0.095;0.4223]; % bottom of haline
 Color(:,50) = [0.015;0.138;0.201];  % bottom of thermal
+
+Color(:,51) = [166;206;227]/255;    % colorblind friendly palette 
+Color(:,52) = [31;120;180]/255;     % these four
+Color(:,53) = [178;223;138]/255;    % go together
+Color(:,54) = [51;160;44]/255;      % blues and greens
+
+Color(:,55) = [27;158;119]/255;     % colorblind friendly palette
+Color(:,56) = [217;95;2]/255;       % these three go together
+Color(:,57) = [117;112;179]/255;    % darker
+
+Color(:,58) = [102;194;165]/255;    % colorblind friendly palette
+Color(:,59) = [252;141;98]/255;     % these three go together
+Color(:,60) = [141;160;203]/255;    % lighter
+
+Color(:,61) = [237;248;233]/255;    % sequential green palette
+Color(:,62) = [186;228;179]/255;    % colorblind friendly 
+Color(:,63) = [116;196;118]/255;    % progressively darker
+Color(:,64) = [49;163;84]/255;
+Color(:,65) = [0;109;44]/255;
+
+Color(:,66) = [255;255;178]/255;    % sequential hot palette
+Color(:,67) = [254;204;92]/255;     % colorblind friendly 
+Color(:,68) = [253;141;60]/255;     % progressively darker
+Color(:,69) = [227;26;28]/255;
+
+Color(:,70) = [44;123;182]/255;     % diverging cool to hot
+Color(:,71) = [171;217;233]/255;    % palette
+Color(:,72) = [255;255;191]/255;    % colorblind friendly
+Color(:,73) = [253;174;97]/255;     % 
+Color(:,74) = [215;25;28]/255;      % 
+
+Color(:,75) = [0;136;55]/255;       % diverging green to purple
+Color(:,76) = [166;219;160]/255;    % palette
+Color(:,77) = [247;247;247]/255;    % colorblind friendly
+Color(:,78) = [194;165;207]/255;    % 
+Color(:,79) = [123;50;148]/255;     % 
+
+Color(:,80) = [1;133;113]/255;      % diverging teal to brown
+Color(:,81) = [128;205;193]/255;    % colorblind friendly
+Color(:,82) = [245;245;245]/255;    % palette
+Color(:,83) = [223;194;125]/255;    % 
+Color(:,84) = [166;97;26]/255;      % 
+
+Color(:,85) = [228;26;28]/255;      % qualitative 6 color
+Color(:,86) = [55;126;184]/255;     % palette
+Color(:,87) = [77;175;74]/255;      % NOT colorblind friendly
+Color(:,88) = [152;78;163]/255;     % 
+Color(:,89) = [255;127;0]/255;      % 
+Color(:,90) = [255;255;51]/255;     % 
+
+
 Color = Color';
-% Color = sortrows(Color,3);
-% Color = sortrows(Color,2);
-% Color = sortrows(Color,1);
 % .........................................................................

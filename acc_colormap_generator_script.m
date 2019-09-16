@@ -1,5 +1,7 @@
 %% generates colormap based on set names of maps
 
+clear
+
 bc_blues = [255,255,255;253,253,254;250,250,253;248,248,252;245,245,251;...
     243,243,250;240,240,249;238,238,248;236,236,247;233,233,246;...
     231,231,245;228,228,244;226,226,243;223,223,242;221,221,241;...
@@ -3262,7 +3264,7 @@ cm = [95,0,0;...
     0,0,97;...
     0,0,95]./255;
 cm = flipud(cm);
-bc_blueredsat2 = [cm(1:116,:);cm(142:end,:)];
+bc_blueredsat2 = [cm(1:115,:);cm(142:end,:)];
 
 bc_reds = [255,255,255;...
     254,253,253;...
@@ -15325,6 +15327,25 @@ bc_whitegreen = [255,255,255;...
     5,82,35;...
     5,80,35]./255;
 
+clin1 = linspace(215,253,64);
+clin2 = linspace(25,174,64);
+clin3 = linspace(28,97,64);
+clin4 = linspace(253,255,64);
+clin5 = linspace(174,255,64);
+clin6 = linspace(97,190,64);
+clin7 = linspace(255,171,64);
+clin8 = linspace(255,217,64);
+clin9 = linspace(190,233,64);
+clin10 = linspace(171,44,64);
+clin11 = linspace(217,123,64);
+clin12 = linspace(233,182,64);
+
+cbr_diff = [clin1,clin4,clin7,clin10;clin2,clin5,clin8,clin11;...
+    clin3,clin6,clin9,clin12]'./255;
+clear clin*
+
+bc_grdiff = [bc_blueredsat2(45:115,:);...
+    0.5*ones(15,3);bc_blueredsat2(116:186,:)];
 
 
 save stan_cmaps
